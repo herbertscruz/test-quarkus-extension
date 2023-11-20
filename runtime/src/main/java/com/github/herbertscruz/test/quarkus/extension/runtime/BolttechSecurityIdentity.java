@@ -5,14 +5,15 @@ import java.security.Principal;
 import java.util.Map;
 import java.util.Set;
 
+import javax.annotation.Priority;
+import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.inject.Alternative;
+import javax.inject.Inject;
+
 import io.quarkus.security.credential.Credential;
 import io.quarkus.security.identity.SecurityIdentity;
 import io.quarkus.security.runtime.SecurityIdentityAssociation;
 import io.smallrye.mutiny.Uni;
-import jakarta.annotation.Priority;
-import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.enterprise.inject.Alternative;
-import jakarta.inject.Inject;
 
 @Alternative
 @Priority(2000)
