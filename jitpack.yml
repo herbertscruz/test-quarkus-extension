@@ -1,0 +1,5 @@
+jdk:
+  - openjdk11
+env:
+  GROUP: "com.github.herbertscruz"
+  ARTIFACT: "test-quarkus-extension"
