@@ -18,7 +18,7 @@ import io.smallrye.mutiny.Uni;
 @Alternative
 @Priority(2000)
 @ApplicationScoped
-public class BolttechSecurityIdentity implements SecurityIdentity {
+public class PersonalSecurityIdentity implements SecurityIdentity {
 
     @Inject
     SecurityIdentityAssociation securityIdentityAssociation;
@@ -27,7 +27,7 @@ public class BolttechSecurityIdentity implements SecurityIdentity {
     @Override
     public Principal getPrincipal() {
         System.out.println("---------------------------------");
-        System.out.println("BolttechSecurityIdentity.getPrincipal() ---> " + securityIdentityAssociation.getIdentity().getPrincipal());
+        System.out.println("PersonalSecurityIdentity.getPrincipal() ---> " + securityIdentityAssociation.getIdentity().getPrincipal());
         System.out.println("---------------------------------");
         return securityIdentityAssociation.getIdentity().getPrincipal();
     }

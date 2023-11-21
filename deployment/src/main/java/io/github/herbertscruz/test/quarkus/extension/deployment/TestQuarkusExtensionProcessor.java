@@ -1,6 +1,6 @@
 package io.github.herbertscruz.test.quarkus.extension.deployment;
 
-import io.github.herbertscruz.test.quarkus.extension.runtime.BolttechSecurityIdentity;
+import io.github.herbertscruz.test.quarkus.extension.runtime.PersonalSecurityIdentity;
 
 import io.quarkus.arc.deployment.AdditionalBeanBuildItem;
 import io.quarkus.deployment.annotations.BuildStep;
@@ -21,6 +21,6 @@ class TestQuarkusExtensionProcessor {
      */
     @BuildStep
     AdditionalBeanBuildItem additionalBeans() {
-        return new AdditionalBeanBuildItem(BolttechSecurityIdentity.class);
+        return new AdditionalBeanBuildItem(PersonalSecurityIdentity.class);
     }
 }
