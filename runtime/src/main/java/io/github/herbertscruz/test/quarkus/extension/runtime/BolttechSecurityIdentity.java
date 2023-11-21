@@ -1,4 +1,4 @@
-package com.github.herbertscruz.test.quarkus.extension.runtime;
+package io.github.herbertscruz.test.quarkus.extension.runtime;
 
 import java.security.Permission;
 import java.security.Principal;

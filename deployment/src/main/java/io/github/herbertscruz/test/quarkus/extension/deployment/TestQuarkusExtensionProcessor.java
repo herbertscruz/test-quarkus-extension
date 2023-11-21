@@ -1,6 +1,6 @@
-package com.github.herbertscruz.test.quarkus.extension.deployment;
+package io.github.herbertscruz.test.quarkus.extension.deployment;
 
-import com.github.herbertscruz.test.quarkus.extension.runtime.BolttechSecurityIdentity;
+import io.github.herbertscruz.test.quarkus.extension.runtime.BolttechSecurityIdentity;
 
 import io.quarkus.arc.deployment.AdditionalBeanBuildItem;
 import io.quarkus.deployment.annotations.BuildStep;
